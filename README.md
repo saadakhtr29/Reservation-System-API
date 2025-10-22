@@ -87,7 +87,7 @@ Create a `.env` file in the project root:
 
 ```env
 DATABASE_URL=postgresql://user:password@localhost:5432/reservation_db
-PORT=3000
+PORT=8000
 NODE_ENV=development
 ```
 
@@ -97,7 +97,7 @@ Create a `.env.test` file in the project root for testing:
 
 ```env
 DATABASE_URL=postgresql://user:password@localhost:5432/reservation_test_db
-PORT=3001
+PORT=8001
 NODE_ENV=test
 ```
 
