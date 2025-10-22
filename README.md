@@ -61,7 +61,7 @@ Follow these steps to set up the project locally:
 1. **Clone the repository**
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/saadakhtr29/Reservation-System-API.git
 cd Reservation-System-API
 ```
 
@@ -104,7 +104,7 @@ NODE_ENV=test
 ### Environment Variables Explained
 
 - **DATABASE_URL**: Connection string to your PostgreSQL database in the format: `postgresql://username:password@host:port/database_name`
-- **PORT**: Port number on which the server will listen (default: 3000)
+- **PORT**: Port number on which the server will listen (default: 8000)
 - **NODE_ENV**: Environment flag for distinguishing between development and test environments
 
 **Important**: The `.gitignore` file is configured to exclude both `.env` and `.env.test` files from version control to protect sensitive credentials.
@@ -173,7 +173,7 @@ The server will start on the port specified in your `.env` file (default: 3000).
 
 You should see output similar to:
 ```
-Server running on port 3000
+Server running on port 8000
 ```
 
 ### Testing the Server
@@ -181,7 +181,7 @@ Server running on port 3000
 Once the server is running, verify it's working:
 
 ```bash
-curl http://localhost:3000/
+curl http://localhost:8000/
 ```
 
 Expected response:
@@ -194,7 +194,7 @@ Event Booking API is running
 ### Base URL
 
 ```
-http://localhost:3000/api
+http://localhost:8000/api
 ```
 
 ### Endpoints
@@ -270,7 +270,7 @@ http://localhost:3000/api
 **Example Usage**:
 
 ```bash
-curl -X POST http://localhost:3000/api/bookings/reserve \
+curl -X POST http://localhost:8000/api/bookings/reserve \
   -H "Content-Type: application/json" \
   -d '{"event_id": 1, "user_id": "user123"}'
 ```
@@ -458,10 +458,6 @@ We welcome contributions to improve the Reservation System API. Please follow th
 - All new features must include tests
 - Existing tests must continue to pass
 - Aim for high code coverage
-
-## License
-
-This project is licensed under the ISC License. See the LICENSE file for details.
 
 ---
 
